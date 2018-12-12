@@ -19,7 +19,7 @@ app.get('/api/work', (request, response) => {
 });
 
 app.get('/api/education', (request, response) => {
-	response.send('[{"yearFrom": "2000", "yearTo": "2003", "place": "HIB", "comment": "Studying"}, {"yearFrom": "2003", "yearTo": "2005", "place": "South Dakota School of Mines", "comment": "Rapid City FTW"}]');
+	response.send('[{"yearFrom": "2000", "yearTo": "2003", "place": "TEST", "comment": "Studying"}, {"yearFrom": "2003", "yearTo": "2005", "place": "South Dakota School of Mines", "comment": "Rapid City FTW"}]');
 	logger.info('Responded to GET request on /api/edu')
 });
 
