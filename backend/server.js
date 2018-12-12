@@ -9,7 +9,7 @@ app.get('/', (request, response) => {
 });
 
 app.get('/api/me', (request, response) => {
-	response.send('{"name": "Arthur Dent", "location": "Earth"}');
+	response.send('{"name": "Øyvind Stokke", "location": "Bergen!"}');
 	logger.info('Responded to GET request on /api/me')
 });
 
@@ -19,7 +19,7 @@ app.get('/api/work', (request, response) => {
 });
 
 app.get('/api/education', (request, response) => {
-	response.send('[{"yearFrom": "2005", "yearTo": "2007", "place": "University 1", "comment": "Studying"}, {"yearFrom": "2001", "yearTo": "2004", "place": "Barista academy", "comment": "Made coffee"}]');
+	response.send('[{"yearFrom": "2000", "yearTo": "2003", "place": "HIB", "comment": "Studying"}, {"yearFrom": "2003", "yearTo": "2005", "place": "South Dakota School of Mines", "comment": "Rapid City FTW"}]');
 	logger.info('Responded to GET request on /api/edu')
 });
 
